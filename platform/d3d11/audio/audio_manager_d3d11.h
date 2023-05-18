@@ -44,6 +44,11 @@ public:
 	void SetMusicLoop(bool looping);
 	bool GetMusicLoop();
 
+	void SetCanPlayMusic(bool cpm);  // added feature by team.h
+	bool GetCanPlayMusic(); // added feature by team.h
+	void SetCanPlaySFX(bool cpsfx);  // added feature by team.h
+	bool GetCanPlaySFX(); // added feature by team.h
+
 private:
 	std::vector<UInt8*> rawSampleData_;
 	std::vector<sf::SoundBuffer*> sampleBuffers_;
@@ -51,6 +56,9 @@ private:
 	sf::Music music;
 	UInt8* musicBuffer;
 	File* musicFile;
+
+	bool can_play_music_;// added feature by team.h
+	bool can_play_sfx_; // added feature by team.h
 };
 
 }

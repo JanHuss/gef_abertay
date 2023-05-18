@@ -47,6 +47,11 @@ namespace gef
 		virtual bool sample_voice_playing(const UInt32 voice_index) = 0;
 		virtual bool sample_voice_looping(const UInt32 voice_index) = 0;
 
+		virtual void SetCanPlayMusic(bool cpsfx) = 0; // added feature by team.h
+		virtual bool GetCanPlayMusic() = 0; // added feature by team.h
+		virtual void SetCanPlaySFX(bool cpsfx) = 0; // added feature by team.h
+		virtual bool GetCanPlaySFX() = 0; // added feature by team.h
+
 
 		static AudioManager* Create();
 	protected:

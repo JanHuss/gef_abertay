@@ -341,4 +341,20 @@ namespace gef
 		// Get value of music loop flag
 		return music.getLoop();
 	}
+	void AudioManagerD3D11::SetCanPlayMusic(bool cpm) // added feature by team.h
+	{
+		can_play_music_ = cpm;
+	}
+	bool AudioManagerD3D11::GetCanPlayMusic() // added feature by team.h
+	{
+		return can_play_music_;
+	}
+	void AudioManagerD3D11::SetCanPlaySFX(bool cpsfx) // added feature by team.h
+	{
+		can_play_sfx_ = cpsfx;
+	}
+	bool AudioManagerD3D11::GetCanPlaySFX() // added feature by team.h
+	{
+		return can_play_sfx_;
+	}
 }
