@@ -14,6 +14,8 @@ namespace gef
 	{
 		// Nothing to setup
 		music.setLoop(true);
+		can_play_music_=true;// added feature by team.h
+		can_play_sfx_=true; // added feature by team.h
 	}
 
 	AudioManagerD3D11::~AudioManagerD3D11(void)
